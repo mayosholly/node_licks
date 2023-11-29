@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>Safe Space</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <img src="/images/login/login.jpg" alt="">
+        </div>
+        <div class="item2">
+            <div class="containerSafe">
+                <div>
+                    <img src="/images/login/brain.jpeg" alt="">
+                </div>
+                <div>
+                    <h1>SafeSpace</h1>
+                </div>
+            </div>
+            <div class="Welcome">
+                <h3>Hello!</h3>
+                <p>Log into your screen</p>
+            </div>
+            <div>
+                <% if (messages.success && messages.success.length) { %>
+                    <div>
+                      <% messages.success.forEach(message => { %>
+                           <li style="color: blue;"><%= message %></li>
+                      <% }); %>
+                    </div>
+                  <% } %>
+
+                            
+                  <% if (messages.error && messages.error.length) { %>
+                    <div>
+                      <% messages.error.forEach(message => { %>
+                        <li style="color: red;"><%= message %></li>
+                      <% }); %>
+                    </div>
+                  <% } %>
+              
+                <form action="/user/login" method="POST">
+                    <div class="icon4">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Enter email" class="inputOne" required>
+                    </div>
+                    <div class="icon5">
+                        <i class="fa-solid fa-lock key"></i>
+                        <input type="password" name="password" placeholder="Enter password" class="inputOne" required>
+                        <i class="fa-solid fa-eye-low-vision eye"></i>
+                    </div>
+                    <div class="forgotpassword">
+                        <p>Forgot password? <a href="./forget-password">Reset Password</a></p>
+                    </div>
+                    <div class="rememberpassword">
+                        <input type="checkbox" name="password"> Remember password
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="signup">Log in</button>
+                    </div>
+                </form>
+            </div>
+            <p class="privacy">By Logging in, you agree to our <span>Terms of Use</span> and <span>Privacy Policy</span></p>
+            <div class="line">
+                <p><span>or</span></p>
+            </div>
+            <div class="googleFacebook">
+                <div class="google1">
+                    <div class="imageDiv">
+                        <img src="/images/login/7123025_logo_google_g_icon.png" alt="">
+                    </div>
+                    <a href="#">Sign Up with google</a>
+                </div>
+                <div class="facebook1">
+                    <div class="imageDiv">
+                        <img class="facebook" src="/images/login/386622_facebook_icon (1).png" alt="">
+                    </div>
+                    <a href="#">Sign Up with facebook</a>
+                </div>
+            </div>
+            <div class="account">
+                <p>Don't have an account? <span><a href="./signup">Sign up</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

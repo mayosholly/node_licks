@@ -1,0 +1,20 @@
+:root {
+	--primaryColor: #0076a6;
+}
+
+.card-div{
+	transform: translate(-50%, -50%) !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+
+.card-div > div > button {
+	background-color: var(--primaryColor);
+}
+
+.card-div > div > button:hover {
+	background-color: var(--primaryColor);
+	opacity: 0.7;
+}

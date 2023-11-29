@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSpace</title>
+    <style>
+        h1 {
+            font-size: 150px;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <% if (messages.success && messages.success.length) { %>
+        <div>
+          <% messages.success.forEach(message => { %>
+               <li style="color: blue;"><%= message %></li>
+          <% }); %>
+        </div>
+      <% } %>
+
+
+    <% if (user) { %>
+        <p>Hello, <%= user.firstName %>!</p>
+    <% } %>
+    <h3>Welcome to SafeSpace4Us Home page.</h3>
+    
+    <form action="/user/logout" method="POST">
+        <button type="submit" >Logout</button>
+      </form>
+</body>
+</html>

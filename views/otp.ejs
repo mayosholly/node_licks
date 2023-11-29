@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/css/otp.css" />
+		<title>safe space</title>
+	</head>
+	<body>
+		<% if (messages.success && messages.success.length) { %>
+			<div>
+			  <% messages.success.forEach(message => { %>
+				   <li style="color: blue;"><%= message %></li>
+			  <% }); %>
+			</div>
+		  <% } %>
+
+					
+		  <% if (messages.error && messages.error.length) { %>
+			<div>
+			  <% messages.error.forEach(message => { %>
+				<li style="color: red;"><%= message %></li>
+			  <% }); %>
+			</div>
+		  <% } %>
+
+		<form action="/user/verify-otp" method="POST">
+			<div
+				class="password-div card d-flex flex-column justify-content-center align-items-center text-center shadow p-4 m-3 border-0 rounded"
+			>
+				<div class="p-2 d-flex flex-column">
+					<div class="icon4">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Enter email" value="<%= messages.formData.email || '' %>" class="inputOne" >
+                    </div>
+					<h6>Enter 6 digit OTP code</h6>
+					<p>Enter the 6- digits code that was sent to your email</p>
+					<div class="icon4">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="number" name="otpCode" placeholder="Enter OTP" value="<%= messages.formData.otpCode || '' %>" class="inputOne" >
+                    </div>
+					<!-- <div class="d-flex my-3 otp-div">
+						<input
+							type="number"
+							name="otpCode"
+							maxlength="1"
+							max="9"
+							min="0"
+							class="code form-control me-3 text-center"
+							autofocus=""
+						/>
+						<input
+							type="number"
+							name="otpCode"
+							maxlength="1"
+							max="9"
+							min="0"
+							class="code form-control me-3 text-center"
+						/>
+						<input
+							type="number"
+							name="otpCode"
+							maxlength="1"
+							max="9"
+							min="0"
+							class="code form-control me-3 text-center"
+						/>
+						<input
+							type="number"
+							name="otpCode"
+							maxlength="1"
+							max="9"
+							min="0"
+							class="code form-control me-3 text-center"
+						/>
+						<input
+							type="number"
+							name="otpCode"
+							maxlength="1"
+							max="9"
+							min="0"
+							class="code form-control me-3 text-center"
+						/>
+						<input
+							type="number"
+							name="otpCode"
+							maxlength="1"
+							max="9"
+							min="0"
+							class="code form-control me-3 text-center"
+						/>
+					</div> -->
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<p class="mb-0 mt-2">RESEND CODE</p>
+					<p>00:59</p>
+				</div>
+			</div>
+		</form>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

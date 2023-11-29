@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>Safe Space</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <img src="/images/signup/signup1.jpg" alt="">
+        </div>
+        <div class="item2">
+            <div class="containerSafe">
+                <div>
+                    <img src="/images/signup/brain.jpeg" alt="">
+                </div>
+                <div>
+                    <h1>SafeSpace</h1>
+                </div>
+            </div>
+            <div class="Welcome">
+                <h3>You are home!</h3>
+                <p>Express yourself without judgement and belong to a supporting community</p>
+            </div>
+            <div>
+
+                <div class="card-header">
+                    <div class="pt-4 pb-2">
+                 
+
+                      <% if (messages.error && messages.error.length) { %>
+                        <div>
+                          <% messages.error.forEach(message => { %>
+                            <li style="color: red;"><%= message %></li>
+                          <% }); %>
+                        </div>
+                      <% } %>
+
+                <form action="/user/signup" method="POST">
+                    <div class="icon1">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="firstName" value="<%= messages.formData.firstName || '' %>" placeholder="Firstname" class="inputOne">
+                    </div>
+                    <div class="icon2">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="lastName" value="<%= messages.formData.lastName || '' %>" placeholder="Lastname" class="inputOne">
+                    </div>
+                    <div class="icon3">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Username" value="<%= messages.formData.username || '' %>" class="inputOne" >
+                    </div>
+                    <div class="icon4">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Enter email" value="<%= messages.formData.email || '' %>" class="inputOne" >
+                    </div>
+                    <div class="icon5">
+                        <i class="fa-solid fa-lock key"></i>
+                        <input type="password" name="password" placeholder="Enter password" class="inputOne" >
+                        <i class="fa-solid fa-eye-low-vision eye"></i>
+                    </div>.
+
+                    <div class="icon5">
+                        <i class="fa-solid fa-lock key"></i>
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password" class="inputOne" >
+                        <i class="fa-solid fa-eye-low-vision eye"></i>
+                    </div>.
+                    <div class="account">
+                        <p>Already have an account? <span><a href="./login">Log in</a></span></p>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="signup">Sign Up</button>
+                        <p class="privacy">By Signing Up you confirm, you are not in crisis, homicidal, suicidal or abusing
+                            anyone and you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="account">
+                <p>Already have an account? <span><a href="./login">Log in</a></span></p>
+            </div>
+            <div class="button">
+                <button type="submit" class="signup">Sign Up</button>
+                <p class="privacy">By Signing Up you confirm, you are not in crisis, homicidal, suicidal or abusing
+                    anyone and you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+            </div> -->
+            <div class="line">
+                <p><span>or</span></p>
+            </div>
+            <div class="googleFacebook">
+                <div class="google1">
+                    <div class="imageDiv">
+                        <img src="/images/signup/7123025_logo_google_g_icon.png" alt="">
+                    </div>
+                    <a href="#">Sign Up with google</a>
+                </div>
+                <div class="facebook1">
+                    <div class="imageDiv">
+                        <img class="facebook" src="/images/signup/386622_facebook_icon (1).png" alt="">
+                    </div>
+                    <a href="#">Sign Up with facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

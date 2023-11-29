@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #1E1E1E;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    width: 100%;
+}
+
+.item1 img {
+    width: 100%;
+}
+
+.item2 {
+    padding-inline: 3rem;
+    width: 100%;
+}
+
+.safe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.safe div img {
+    width: 30%;
+}
+
+.containerSafe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSafe img{
+    text-align: right;
+}
+
+
+
+.Welcome h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-block: 1rem;
+}
+
+.Welcome p {
+    color: rgba(30, 30, 30, 0.80);
+    font-size: 0.75rem;
+    font-family: Inter;
+    padding-block: 0.7rem 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.inputOne {
+    border: 1px solid #0076A6;
+    padding: 0.7rem 25.5rem 0.7rem 1.8rem;
+    margin-block: 0.7rem;
+    border-radius: 5px;
+}
+
+.details {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.account {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-block: 1.5rem;
+}
+
+.account span a {
+    color: #27a5d7;
+    text-decoration: none;
+}
+
+.signup {
+    padding: 0.7rem 16rem;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #0076A6;
+    margin-block: 0.5rem;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 0.85rem;
+}
+
+.icon1 {
+    position: relative;
+}
+
+.icon2 {
+    position: relative;
+}
+
+.icon3 {
+    position: relative;
+}
+
+.icon4 {
+    position: relative;
+}
+
+.icon5 {
+    position: relative;
+}
+
+.icon1 i {
+    position: absolute;
+    top: 38%;
+    left: 1.5%;
+}
+
+.icon2 i {
+    position: absolute;
+    top: 38%;
+    left: 1.5%;
+}
+
+.icon3 i {
+    position: absolute;
+    top: 38%;
+    left: 1.5%;
+}
+
+.icon4 i {
+    position: absolute;
+    top: 38%;
+    left: 1.5%;
+}
+
+.icon5 .key {
+    position: absolute;
+    top: 32%;
+    left: 1.5%;
+}
+
+.icon5 .eye {
+    position: absolute;
+    top: 32%;
+    right: 1.5%;
+}
+
+.privacy {
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 0.75rem;
+    padding-block: 1.5rem;
+}
+
+.privacy span {
+    color: #27a5d7;
+}
+
+.forgotpassword {
+    text-align: end;
+    padding-block: 1rem 2rem;
+    font-size: 0.85rem;
+}
+
+.forgotpassword a{
+    text-decoration: none;
+    color: #27a5d7;
+    padding-left: 0.5rem;
+}
+
+.rememberpassword {
+    font-size: 0.85rem;
+}
+
+.line p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1rem;
+    margin: 20px 0 20px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.line span {
+    padding: 0 10px;
+    background: #FFF;
+}
+
+/* .icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+} */
+
+
+/* .googleFacebook .imageDiv {
+    width: 100%;
+    text-align: center;
+} */
+
+.googleFacebook .imageDiv {
+    width: 20%
+}
+.googleFacebook img {
+    width: 20%
+}
+
+/* .icon .google1 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #1E1E1E;
+    padding-right: 6rem;
+    border-radius: 5px;
+    padding-block: 0.5rem;
+}
+
+.icon a{
+    font-size: 0.7rem;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+.icon .facebook1 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #1E1E1E;
+    padding-right: 6rem;
+    border-radius: 5px;
+    padding-block: 0.5rem;
+} */
+
+.googleFacebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+    gap: 1.5rem;
+    
+}
+
+.googleFacebook .google1{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1E1E1E;
+
+}
+
+.googleFacebook a{
+    text-decoration: 0;
+    font-size: 0.8rem;
+}
+
+.googleFacebook .facebook1{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1E1E1E;
+}
+
+.googleFacebook a{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+
+/*forgot password*/
+.Fpassword h2{
+    text-align: center;
+    margin-block: 8rem 4rem;
+    color: #27a5d7;
+}
+
+.Fpassword h2{
+    text-align: center;
+    margin-block: 8rem 4rem;
+}
+
+.Email {
+    position: relative;
+    margin-inline: 22rem;
+    padding-block: 1rem;
+}
+
+.Email i {
+    position: absolute;
+    top: 43%;
+    left: 1.5%;
+}
+
+
+
+.Emailone {
+    border: 1px solid #0076A6;
+    padding: 0.7rem 25.5rem 0.7rem 1.8rem;
+    margin-block: 3rem;
+    border-radius: 5px;
+}
+
+.Submit {
+    padding: 0.7rem 30rem;
+    text-transform: uppercase;
+    background-color: #0076A6;
+    margin-block: 0.5rem;
+    margin-inline: 16rem;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 0.85rem;
+}
